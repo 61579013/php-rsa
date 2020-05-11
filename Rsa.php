@@ -1,7 +1,7 @@
 <?php
 /**
  * Class Rsa加密解密类
- * Created by 桔子分期
+ * Created by gouguoyin
  */
 
 /*使用示例
