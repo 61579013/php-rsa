@@ -1,7 +1,7 @@
 # php-rsa
 
-#### 介绍
-php版rsa加密类，和java兼容，支持长密文
+#### 项目介绍
+php版rsa加密类，和java兼容，基于openssl，支持长密文
 
 ### 使用示例
 
