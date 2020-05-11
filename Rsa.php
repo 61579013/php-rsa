@@ -1,7 +1,8 @@
 <?php
+
 /**
  * Class Rsa加密解密类
- * Created by gouguoyin
+ * Created by 桔子分期
  */
 
 /*使用示例
@@ -26,7 +27,7 @@ class Rsa
     {
         $pem = "-----BEGIN RSA PRIVATE KEY-----" . PHP_EOL;
 
-        $pem .= chunk_split($this->privateKey,64,PHP_EOL);
+        $pem .= chunk_split($this->privateKey, 64, PHP_EOL);
 
         $pem .= "-----END RSA PRIVATE KEY-----" . PHP_EOL;
 
@@ -41,7 +42,7 @@ class Rsa
     {
         $pem = "-----BEGIN PUBLIC KEY-----" . PHP_EOL;
 
-        $pem .= chunk_split($this->publicKey,64,PHP_EOL);
+        $pem .= chunk_split($this->publicKey, 64, PHP_EOL);
 
         $pem .= "-----END PUBLIC KEY-----" . PHP_EOL;
 
@@ -99,7 +100,7 @@ class Rsa
      */
     private function _base64Encode($value) {
         $data = base64_encode($value);
-        return str_replace(['+','/','='], ['-','_',''], $data);
+        return str_replace(['+', '/', '='], ['-', '_', ''], $data);
     }
 
     /**
@@ -107,7 +108,7 @@ class Rsa
      * @return bool|string
      */
     private function _base64Decode($value) {
-        $data = str_replace(['-','_'], ['+','/'], $value);
+        $data = str_replace(['-', '_'], ['+', '/'], $value);
 
         if ($mod4 = strlen($data) % 4) {
             $data .= substr('====', $mod4);
