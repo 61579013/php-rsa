@@ -1,9 +1,4 @@
 <?php
-
-/**
- * Class Rsa加密解密类
- */
-
 /*使用示例
 $rsa = new Rsa();
 $rsa->privateKey = '私钥字符串';
