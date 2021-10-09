@@ -2,7 +2,6 @@
 
 /**
  * Class Rsa加密解密类
- * Created by 桔子分期
  */
 
 /*使用示例
